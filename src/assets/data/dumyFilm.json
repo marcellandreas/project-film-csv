@@ -1,0 +1,204 @@
+{
+  "films": [
+    {
+      "id": 290,
+      "judul_film": "Adam & Steve",
+      "rating": 5.0,
+      "genre": ["Comedy", "Romance"],
+      "tahun_rilis": 2019,
+      "sinopsis": "Adam and Mary, two gay siblings, decide to bring their partners home for Christmas dinner. They really don't want to come out though, so they come up with a plan; they'll swap partners and pretend to be two straight couples. After a tragic first encounter with Grandma, who has a lot of opinions about children out of wedlock, foreigners and - bread, Steve can't take it anymore and threatens to leave. Adam has his way of persuading him, but that may involve the two of them, a tiny cupboard under the stairs, and a very high chance of Grandma walking in.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/t1tK1vyAhCOiK0GnAAk9MpPBk2p.jpg",
+      "negara": "United States"
+    },
+    {
+      "id": 396,
+      "judul_film": "Along Came Jones",
+      "rating": 5.0,
+      "genre": ["Comedy", "Romance", "Western"],
+      "tahun_rilis": 1945,
+      "sinopsis": "A classic Western film featuring unexpected twists and turns in the Old West.",
+      "poster": "https://tse3.mm.bing.net/th?id=OIP.ZM2m8iLPT-0FE1oCsK_1DgHaLH&pid=Api&P=0&h=220",
+      "negara": "United States"
+    },
+    {
+      "id": 619,
+      "judul_film": "August Evening",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 2007,
+      "sinopsis": "A film about a farm worker named Jaime and his young, widowed daughter-in-law, Lupe, as their lives are in turmoil.",
+      "poster": "https://tse3.mm.bing.net/th?id=OIP.qWG4G7wrN2MVxm2LZvYP5QHaKq&pid=Api&P=0&h=220",
+      "negara": "United States"
+    },
+    {
+      "id": 1157,
+      "judul_film": "Brother Minister: The Assassination of Malcolm X",
+      "rating": 5.0,
+      "genre": ["Documentary"],
+      "tahun_rilis": 1994,
+      "sinopsis": "A documentary exploring the life and events leading to the assassination of Malcolm X.",
+      "poster": "https://tse1.mm.bing.net/th?id=OIP.mtTUE8XEFrOSNk8B9lZ4oQAAAA&pid=Api&P=0&h=220",
+      "negara": "United States"
+    },
+    {
+      "id": 1188,
+      "judul_film": "Bullfighter and the Lady",
+      "rating": 5.0,
+      "genre": ["Action, Drama, Romance"],
+      "tahun_rilis": 1951,
+      "sinopsis": "An American takes up bullfighting to impress the ladies but learns to respect the sport.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/rmPuPvdFbBfeIn51DO7j7YyIZ5c.jpg",
+      "negara": "United States"
+    },
+    {
+      "id": 2252,
+      "judul_film": "Entre les murs",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 2008,
+      "sinopsis": "A French drama set in a school, exploring the dynamics between students and teachers.",
+      "poster": "https://tse4.mm.bing.net/th?id=OIP.qhB1BnKCpQuqkDsSoRHzlwHaK-&pid=Api&P=0&h=220",
+      "negara": "France"
+    },
+    {
+      "id": 2294,
+      "judul_film": "Eve and the Fire Horse",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 2005,
+      "sinopsis": "Eve is a precocious nine year-old girl with a wild imagination growing up in a traditional Chinese immigrant family in Vancouver where Confucian doctrines, superstitious obsessions and divine visions abound. When Buddhism and Catholicism are thrown into the mix, life for Eve and her 11-year-old prim and authoritative sister, Karena, escalates into a fantasia of catastrophe, sainthood and cultural confusion. The journey of a young girl and her sister striving to grow up in world where childhood is lonely and the world is full of wonder.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/gjDpnDQBisj1Bkaw61jYapInJuj.jpg",
+      "negara": "Canada"
+    },
+    {
+      "id": 2470,
+      "judul_film": "Finnegan Begin Again",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 1985,
+      "sinopsis": "A schoolteacher in her early 40s, involved in a dead-end love affair with a married mortician, drifts into a relationship with an aging newspaperman.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/4OQFxSBcS3JjQrKlHQ4IEFZ5BYD.jpg",
+      "negara": "United States"
+    },
+    {
+      "id": 2592,
+      "judul_film": "Frankenstein and the Monster from Hell",
+      "rating": 5.0,
+      "genre": ["Horror"],
+      "tahun_rilis": 1974,
+      "sinopsis": "Dr Simon Helder, sentenced to an insane asylum for crimes against humanity, recognises its director as the brilliant Baron Frankenstein, the man whose work he had been trying to emulate before his imprisonment. Frankenstein utilises Helder's medical knowledge for a project he has been working on for some time. He is assembling a man from vital organs extracted from various inmates in the asylum. And the Baron will resort to murder to acquire the perfect specimens for his most ambitious project ever.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/lKcAIHSOHquRgit3F59Z81vdMdl.jpg",
+      "negara": "United Kingdom"
+    },
+    {
+      "id": 2681,
+      "judul_film": "Gabbeh",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 1996,
+      "sinopsis": "An elderly couple go about their routine of cleaning their gabbeh, while bickering gently with each other. Magically, a young woman appears, helping the two clean the rug. This young woman belongs to the clan whose history is depicted in the design of the gabbeh, and the rug recounts the story of the courtship of the young woman by a stranger from the clan.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ierN63KDyfhgflZBXXvSqEcX3Sv.jpg",
+      "negara": "Iran"
+    },
+    {
+      "id": 2718,
+      "judul_film": "Gertrud",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 1964,
+      "sinopsis": "Hopeless romantic Gertrud inhabits a turn-of-the-century milieu of artists and musicians, where she pursues an idealized notion of love that will always elude her. She abandons her distinguished husband and embraces an affair with a young concert pianist, who falls short of her desire for lasting affection. When an old lover returns to her life, fresh disappointments follow, and Gertrud must try to come to terms with reality.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/bF8Z8Cntr7GRDI5qYGsaOwy7c8Q.jpg",
+      "negara": "Denmark"
+    },
+    {
+      "id": 3858,
+      "judul_film": "Ko to tamo peva",
+      "rating": 5.0,
+      "genre": ["Comedy"],
+      "tahun_rilis": 1980,
+      "sinopsis": "A comedy film set during World War II, offering a humorous perspective on challenging times.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/1r4buAPUyqWwhdKxki1fyBeehsw.jpg",
+      "negara": "Yugoslavia"
+    },
+    {
+      "id": 3929,
+      "judul_film": "La antena",
+      "rating": 5.0,
+      "genre": ["Adventure", "Fantasy", "Film-Noir", "Mystery", "Sci-Fi"],
+      "tahun_rilis": 2007,
+      "sinopsis": "A visually striking sci-fi film exploring the consequences of a society without voices.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hHe7E6zHtSnqa0iI7EO54jrHySE.jpg",
+      "negara": "Argentina"
+    },
+    {
+      "id": 4019,
+      "judul_film": "La vie et rien d'autre",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 1989,
+      "sinopsis": "January, 1920. 350,000 French soldiers remain missing in action. Major Dellaplane tirelessly matches the dead and the wounded with families' descriptions. Honor and ethics drive him; he hates the idea of 'the unknown soldier.' Into his sector, looking for her husband, comes a haughty, politically connected Parisian, Madame Irène de Courtil. Brusquely, Dellaplane offers her 1/350,000th of his time, but as their paths cross and she sees his courage and resolve, feelings change. After he finds a surprising connection between her missing husband and a local teacher, Irène makes Dellaplane an offer. This man of action hesitates: has he missed his only chance?",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/qxyXttnO7UkKovpFo0QmxxgZNAP.jpg",
+      "negara": "France"
+    },
+    {
+      "id": 4488,
+      "judul_film": "Adventure, War, Western",
+      "rating": 5.0,
+      "genre": ["Western"],
+      "tahun_rilis": 1965,
+      "sinopsis": "During the last winter of the Civil War, cavalry officer Amos Dundee leads a contentious troop of Army regulars, Confederate prisoners and scouts on an expedition into Mexico to destroy a band of Apaches who have been raiding U.S. bases in Texas.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/afdhdupMyfn3tDoL3XosgQF82gX.jpg",
+      "negara": "United States"
+    },
+    {
+      "id": 4537,
+      "judul_film": "Maradona by Kusturica",
+      "rating": 5.0,
+      "genre": ["Documentary"],
+      "tahun_rilis": 2008,
+      "sinopsis": "A documentary capturing the life and career of football legend Diego Maradona.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/r0JzNHSQNL7ya96bnGSroSNRUwf.jpg",
+      "negara": "Serbia"
+    },
+    {
+      "id": 5996,
+      "judul_film": "Saikaku ichidai onna",
+      "rating": 5.0,
+      "genre": ["Drama"],
+      "tahun_rilis": 1952,
+      "sinopsis": "In Edo Period Japan, a noblewoman's banishment for her love affair with a lowly page signals the beginning of her inexorable fall.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/mhHZvr0FmgGTtFL8aRYHp4X0Hs2.jpg",
+      "negara": "Japan"
+    },
+    {
+      "id": 6191,
+      "judul_film": "Shanghai Ghetto",
+      "rating": 5.0,
+      "genre": ["Documentary"],
+      "tahun_rilis": 2002,
+      "sinopsis": "SHANGHAI GHETTO recalls the strange-but-true story of thousands of European Jews who were shut out of country after country while trying to escape Nazi persecution in the late 1930s. Left without options or entrance visas, a beacon of hope materialized for them on the other side of the world, and in the unlikeliest of places, Japanese-controlled Shanghai. Fleeing for their lives, these Jewish refugees journeyed to form a settlement in the exotic city, penniless and unprepared for their new life in the Far East. At the turn of the new millennium, filmmakers Dana Janklowicz-Mann and Amire Mann boldly snuck into China with two survivors and a digital camera to shoot at the site of the original Shanghai Ghetto, unchanged since WWII.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/pSnmc99khdKV0VmfYvAENK6T4ko.jpg",
+      "negara": "United States"
+    },
+    {
+      "id": 6259,
+      "judul_film": ["Action", "Comedy", "Crime"],
+      "rating": 5.0,
+      "genre": "Action",
+      "tahun_rilis": 1983,
+      "sinopsis": "An action-packed film featuring martial arts and the quest for justice.",
+      "poster": "https://tse2.mm.bing.net/th?id=OIP._TQx8ETHPKUTiBoVQ059ZgAAAA&pid=Api&P=0&h=220",
+      "negara": "Hong Kong"
+    },
+    {
+      "id": 6440,
+      "judul_film": "Sonnenallee",
+      "rating": 5.0,
+      "genre": ["Comedy", "Romance"],
+      "tahun_rilis": 1999,
+      "sinopsis": "A comedy set in East Berlin, offering a humorous take on life in the former German Democratic Republic.",
+      "poster": "https://tse3.mm.bing.net/th?id=OIP.ONNbPprBIH_uSzsSnisQswHaKV&pid=Api&P=0&h=220",
+      "negara": "Germany"
+    }
+  ]
+}
