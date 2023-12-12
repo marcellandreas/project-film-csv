@@ -3,29 +3,13 @@ import Final from "../../assets/data/dataFilm.csv";
 import Papa from "papaparse";
 import Navbar from "../../components/organisms/Navbar";
 import { FaPrint } from "react-icons/fa";
-
-const TabBar = ({ tabs, activeTab, onChange }) => {
-  return (
-    <div className="tab-bar flex  gap-3 overflow-y-auto    ">
-      {tabs.map((tab, index) => (
-        <div
-          key={index}
-          className={` bg-gray-800 text-white px-3 w-40 flex justify-center items-center   cursor-pointer rounded-md${
-            index === activeTab ? " bg-red-900 w-40" : ""
-          } `}
-          onClick={() => onChange(index)}
-        >
-          {tab}
-        </div>
-      ))}
-    </div>
-  );
-};
+import { AxiosInstance } from "../../components/apis";
+import { TabBar } from "../../components/molecules/Tabbar";
 
 function Genres() {
   const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 30; // Ganti jumlah item per halaman sesuai kebutuhan
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -86,6 +70,16 @@ function Genres() {
       ? "Menampilkan semua data"
       : `Filter by Genre: ${allGenres[activeTab]}`;
 
+  const idUser = localStorage.getItem("id_user");
+  const handleActionType = () => {
+    AxiosInstance.post(`type`, {
+      id_user: Number(idUser),
+      action_type: `Genres: ${allGenres[activeTab]}`,
+    })
+      .then(console.log("berhasil"))
+      .catch(console.log("gagal"));
+  };
+
   const handleExportCSV = () => {
     // Assuming you want to export the entire data
     const csvData = Papa.unparse(data);
@@ -113,6 +107,7 @@ function Genres() {
             setCurrentPage(1);
             setActiveTab(tabIndex);
           }}
+          handleActionType={handleActionType}
         />
 
         <div className=" flex justify-between items-center mt-4 w-full  flex-col md:flex-row gap-4">

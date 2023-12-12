@@ -22,6 +22,9 @@ const DetailPopuler = () => {
         <img className="w-full h-[100vh] bg-cover" src={bg} alt="" />
         <div className="opacity-layer"></div>
         <CardFilmDetails data={film} />
+        <div className=" bg-red-900 px-20 pb-10">
+          <h1 className=" text-xl underline">Rekomendasi</h1>
+        </div>
       </div>
     </section>
   );

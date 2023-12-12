@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c16b915f.css",
+    "main.js": "/static/js/main.30eaf616.js",
+    "static/js/787.d31b17a3.chunk.js": "/static/js/787.d31b17a3.chunk.js",
+    "static/media/dataFilm.csv": "/static/media/dataFilm.50b1f28a203de93c28a6.csv",
+    "static/media/rata_rata_per_judul_film.csv": "/static/media/rata_rata_per_judul_film.737520b7438d93c6455c.csv",
+    "static/media/bg.jpg": "/static/media/bg.29031e14b063462b4b89.jpg",
+    "static/media/banner.jpg": "/static/media/banner.b2f3fb68d7124adbb9d8.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.c16b915f.css.map": "/static/css/main.c16b915f.css.map",
+    "main.30eaf616.js.map": "/static/js/main.30eaf616.js.map",
+    "787.d31b17a3.chunk.js.map": "/static/js/787.d31b17a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c16b915f.css",
+    "static/js/main.30eaf616.js"
+  ]
+}

@@ -5,13 +5,14 @@ import Data from "../../assets/data/rata_rata_per_judul_film.csv";
 import Populer from "../../components/Populer";
 import Banner from "../../components/molecules/Banner";
 import { FaLongArrowAltDown, FaLongArrowAltUp, FaPrint } from "react-icons/fa";
+import { AxiosInstance } from "../../components/apis";
 
 const Landing = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 50;
   const [searchTerm, setSearchTerm] = useState("");
   const [filterType, setFilterType] = useState("highest"); // "highest" or "lowest"
-  const itemsPerPage = 50;
 
   const filteredData = data
     .filter((row) => {
@@ -72,6 +73,16 @@ const Landing = () => {
     window.URL.revokeObjectURL(url);
   };
 
+  const idUser = localStorage.getItem("id_user");
+  const handleActionType = () => {
+    AxiosInstance.post(`type`, {
+      id_user: Number(idUser),
+      action_type: `Button Data Olah`,
+    })
+      .then(console.log("berhasil"))
+      .catch(console.log("gagal"));
+  };
+
   return (
     <section>
       <Navbar />
@@ -121,6 +132,19 @@ const Landing = () => {
               >
                 <FaPrint />
                 <span className=" hidden md:block">Export CSV</span>
+              </a>
+              <a
+                href="https://www.netflix.com/id-en/"
+                target="_blank"
+                className="flex gap-1 items-center bg-slate-700 px-4 py-2 rounded-md"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  alertButton();
+                  handleActionType();
+                }}
+              >
+                <FaPrint />
+                <span className=" hidden md:block">DataOlah</span>
               </a>
             </div>
           </div>
