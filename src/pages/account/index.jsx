@@ -56,15 +56,15 @@ const Account = () => {
   return (
     <>
       <Navbar />
-      <section className=" pt-[15vh] sm:px-2 md:px-40  bg-red-900 text-white min-h-screen ">
-        <div className=" bg-white text-black rounded-xl w-[400px] min-h-[50vh] p-4">
-          <div>
-            <h1 className="text-2xl font-bold underline mb-3">Profile</h1>
-            <button>Edit</button>
+      <section className="px-4 pt-[15vh] sm:px-2 md:px-40  bg-red-900 text-white flex  min-h-screen ">
+        <div className=" bg-white text-black rounded-xl w-[800px] h-80 mx-auto p-4">
+          <div className="mb-2">
+            <h1 className="text-2xl font-bold  mb-3 text-center">Profile</h1>
+            <hr />
           </div>
-          <div className=" grid gap-2 grid-flow-dense grid-cols-1">
+          <div className=" grid gap-3 grid-flow-dense grid-cols-1">
             <div className="flex justify-center flex-col">
-              <label> Username</label>
+              <label className="text-black font-semibold"> Username</label>
               <input
                 readOnly
                 value="username"
@@ -72,7 +72,7 @@ const Account = () => {
               />
             </div>
             <div className="flex justify-center flex-col">
-              <label>Nama Lengkap</label>
+              <label className="text-black font-semibold">Nama Lengkap</label>
               <input
                 type="text"
                 name="full_name"
@@ -82,7 +82,7 @@ const Account = () => {
               />
             </div>
             <div className="flex justify-center flex-col">
-              <label>Email</label>
+              <label className="text-black font-semibold">Email</label>
               <input
                 type="text"
                 name="email"

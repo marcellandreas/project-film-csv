@@ -12,7 +12,7 @@ export const TabBar = ({ tabs, onChange, handleActionType }) => {
   };
 
   return (
-    <div className="tab-bar flex gap-3 overflow-y-auto">
+    <div className="tab-bar flex gap-3 overflow-y-auto ">
       {tabs.map((tab, index) => (
         <div
           key={index}

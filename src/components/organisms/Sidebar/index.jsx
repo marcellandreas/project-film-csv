@@ -1,16 +1,25 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { IoMdPeople } from "react-icons/io";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
-  const Menus = [{ title: "User", src: "" }];
+  const Menus = [{ title: "User", src: IoMdPeople }];
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    alert("Berhasil Logout");
+    localStorage.removeItem("token");
+    navigate("/");
+  };
   return (
     <div
       className={` ${
         open ? "w-72" : "w-20 "
-      } bg-red-900 min-h-screen p-3  pt-8 duration-300 sticky top-0`}
+      } bg-red-900 min-h-screen p-3  pt-8 duration-300 relative`}
     >
       <div
         className={`absolute h-8 flex justify-center items-center w-8 z-20 cursor-pointer -right-3 top-9  bg-blue-700
@@ -50,7 +59,7 @@ const Sidebar = () => {
               className={`flex  rounded-md p-2 cursor-pointer hover:bg-blue-900 text-gray-300 text-sm items-center gap-x-4 
     ${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-white"} `}
             >
-              <p>X</p>
+              {Menu.src && React.createElement(Menu.src, { className: "mr-2" })}
               <span
                 className={`${
                   !open && "hidden"
@@ -61,10 +70,11 @@ const Sidebar = () => {
             </NavLink>
           ))}
         </ul>
-        <div
+        <button
           className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 hover:bg-white hover:text-black     mt-1 absolute bottom-0 w-full ${
             !open ? "justify-center" : ""
           }`}
+          onClick={handleLogout}
         >
           <MdLogout size={18} />
           <span
@@ -74,7 +84,7 @@ const Sidebar = () => {
           >
             Logout
           </span>
-        </div>
+        </button>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import MorePopuler from "../components/Populer/MorePopoler";
 import Account from "../pages/account";
 import DashboardAdmin from "../pages/Dashboard";
 import { useEffect, useState } from "react";
+import NotFound from "../pages/notFound";
 
 const Routers = () => {
   const [role, setRole] = useState("");
@@ -23,6 +24,7 @@ const Routers = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/genres" element={<Genres />} />
         <Route path="/account" element={<Account />} />
         <Route path="/more-populer" element={<MorePopuler />} />
