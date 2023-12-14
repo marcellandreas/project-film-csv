@@ -12,7 +12,6 @@ const Account = () => {
     role: 2,
   });
 
-  console.log(formValues);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -34,7 +33,7 @@ const Account = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array to run the effect only once when the component mounts
+  }, [loading]); // Empty dependency array to run the effect only once when the component mounts
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -57,6 +56,7 @@ const Account = () => {
     <>
       <Navbar />
       <section className="px-4 pt-[15vh] sm:px-2 md:px-40  bg-red-900 text-white flex  min-h-screen ">
+        <p>{error}</p>
         <div className=" bg-white text-black rounded-xl w-[800px] h-80 mx-auto p-4">
           <div className="mb-2">
             <h1 className="text-2xl font-bold  mb-3 text-center">Profile</h1>

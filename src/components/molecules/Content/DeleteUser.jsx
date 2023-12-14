@@ -10,7 +10,6 @@ const DeleteUser = ({ onClose, idUser, setIsLoading }) => {
   useEffect(() => {
     AxiosInstance.get(`/auth/user/${idUser}`)
       .then((res) => {
-        console.log(res.data);
         setFormValues({
           ...formValues,
           username: res.data.username,

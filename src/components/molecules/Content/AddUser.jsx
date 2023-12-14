@@ -3,7 +3,6 @@ import { MdEmail, MdPeople } from "react-icons/md";
 import React, { useState } from "react";
 import { AxiosInstance } from "../../apis";
 import { CustomInput } from "../../atoms/FormAtoms";
-import { useNavigate } from "react-router-dom";
 const AddUser = ({ onClose, setIsLoading }) => {
   const [formValues, setFormValues] = useState({
     username: "",
@@ -20,13 +19,10 @@ const AddUser = ({ onClose, setIsLoading }) => {
 
   const [isShowPassword, setIsShowPassword] = useState(false);
 
-  console.log(formValues);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formValues);
     try {
       const response = await AxiosInstance.post(`/auth/register`, formValues);
-      console.log(response);
 
       if (
         Object.values(formValues).some((value) => value == null || value === "")
@@ -35,21 +31,17 @@ const AddUser = ({ onClose, setIsLoading }) => {
         return;
       }
 
-      // Check if response.data is truthy before accessing its properties
       if (response.data) {
         alert(response.data.message);
         onClose();
         setIsLoading(true);
       } else {
-        // Handle the case where response.data is falsy
         alert("Unexpected response format");
       }
     } catch (error) {
-      // Handle errors
       alert(error.message);
     }
   };
-  const navigate = useNavigate();
 
   return (
     <section className="w-[400px] bg-red-900 z-50 rounded-lg p-3 relative text-white">

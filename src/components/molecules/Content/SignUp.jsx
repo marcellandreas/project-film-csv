@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { AxiosInstance } from "../../apis";
 import { CustomInput } from "../../atoms/FormAtoms";
 import { useNavigate } from "react-router-dom";
-const SignUp = ({ onClose, setLoggedIn }) => {
+const SignUp = ({ onClose }) => {
   const [activeTab, setActiveTab] = useState("login");
 
   const [formValues, setFormValues] = useState({
@@ -42,18 +42,14 @@ const SignUp = ({ onClose, setLoggedIn }) => {
     e.preventDefault();
     try {
       const response = await AxiosInstance.post(`/auth/register`, formValues);
-      console.log(response);
 
-      // Check if response.data is truthy before accessing its properties
       if (response.data) {
         alert(response.data.message);
         onClose();
       } else {
-        // Handle the case where response.data is falsy
         alert("Unexpected response format");
       }
     } catch (error) {
-      // Handle errors
       alert(error.message);
     }
   };
@@ -75,15 +71,12 @@ const SignUp = ({ onClose, setLoggedIn }) => {
         navigate("/");
         localStorage.setItem("role", "user");
       }
-      console.log(response.data.data);
       alert("anda berhasil login");
       onClose();
     } catch (error) {
       alert("Login Gagal. Periksa kembali username dan password.");
     }
   };
-
-  console.log(username, password);
 
   return (
     <section className="w-[400px] bg-red-900 z-50 rounded-lg p-3 relative text-white">

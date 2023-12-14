@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import { AxiosInstance } from "../../apis";
 import { CustomInput } from "../../atoms/FormAtoms";
 const EditUser = ({ onClose, idUser }) => {
-  console.log(idUser);
-
   const [formValues, setFormValues] = useState({
     username: "",
     password: "",
@@ -15,7 +13,6 @@ const EditUser = ({ onClose, idUser }) => {
   useEffect(() => {
     AxiosInstance.get(`/auth/user/${idUser}`)
       .then((res) => {
-        console.log(res.data);
         setFormValues({
           ...formValues,
           username: res.data.username,
@@ -32,8 +29,6 @@ const EditUser = ({ onClose, idUser }) => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  console.log(formValues);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -41,8 +36,6 @@ const EditUser = ({ onClose, idUser }) => {
         `/auth/user/${idUser}`,
         formValues
       );
-      console.log(response);
-
       if (response.data) {
         alert(response.data.message);
         onClose();

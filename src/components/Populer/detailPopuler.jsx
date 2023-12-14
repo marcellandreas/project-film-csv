@@ -8,11 +8,9 @@ import Navbar from "../organisms/Navbar";
 const DetailPopuler = () => {
   const { filmId } = useParams();
   const [film, setFilm] = useState(null);
-  console.log(filmId);
 
   useEffect(() => {
     const selectedFilm = DataFilm.films.find((f) => f.id === Number(filmId));
-    console.log(selectedFilm);
     setFilm(selectedFilm);
   }, [filmId]);
   return (

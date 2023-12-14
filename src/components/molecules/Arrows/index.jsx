@@ -1,4 +1,3 @@
-// CustomArrows.js
 import React from "react";
 
 const arrowStyle = {
@@ -6,9 +5,10 @@ const arrowStyle = {
   top: "50%",
   display: "block",
   transform: "translateY(-50%)",
-  fontSize: "40px", // Sesuaikan ukuran ikon sesuai kebutuhan
+  fontSize: "40px",
   cursor: "pointer",
   color: "white",
+  zIndex: 20,
 };
 
 const CustomPrevArrow = ({ className, onClick }) => (

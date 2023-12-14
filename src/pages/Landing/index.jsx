@@ -3,9 +3,9 @@ import Papa from "papaparse";
 import Navbar from "../../components/organisms/Navbar";
 import Data from "../../assets/data/rata_rata_per_judul_film.csv";
 import Populer from "../../components/Populer";
-import Banner from "../../components/molecules/Banner";
 import { FaLongArrowAltDown, FaLongArrowAltUp, FaPrint } from "react-icons/fa";
 import { AxiosInstance } from "../../components/apis";
+import BannerSec from "../../components/templates/BannerSec";
 
 const Landing = () => {
   const [data, setData] = useState([]);
@@ -58,10 +58,8 @@ const Landing = () => {
   };
 
   const handleExportCSV = () => {
-    // Assuming you want to export the entire data
     const csvData = Papa.unparse(data);
 
-    // Create a Blob and a link to trigger the download
     const blob = new Blob([csvData], { type: "text/csv" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -87,8 +85,8 @@ const Landing = () => {
     <section>
       <Navbar />
       <div className=" py-[10vh] bg-red-900">
-        <Banner />
-        <section className="min-h-screen   md:px-20 px-4 text-white">
+        <BannerSec />
+        <section className="min-h-screen md:px-20 px-4 text-white">
           <Populer />
           <div className="my-4 flex w-full items-center justify-between flex-col md:flex-row gap-4">
             <h2 className="text-2xl md:text-3xl capitalize touch-pan-up">
@@ -120,11 +118,8 @@ const Landing = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="p-2 rounded-md border self-end border-white text-black"
               />
-              <a
-                href="https://www.netflix.com/id-en/"
-                target="_blank"
+              <button
                 className="flex gap-1 items-center bg-slate-700 px-4 py-2 rounded-md"
-                rel="noopener noreferrer"
                 onClick={() => {
                   alertButton();
                   handleExportCSV();
@@ -132,7 +127,7 @@ const Landing = () => {
               >
                 <FaPrint />
                 <span className=" hidden md:block">Export CSV</span>
-              </a>
+              </button>
               <a
                 href="https://www.netflix.com/id-en/"
                 target="_blank"
