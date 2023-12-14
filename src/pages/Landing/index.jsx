@@ -92,7 +92,7 @@ const Landing = () => {
             <h2 className="text-2xl md:text-3xl capitalize touch-pan-up">
               Movie by Rating
             </h2>
-            <div className="flex gap-3 w-full md:w-auto justify-between md:justify-normal">
+            <div className="flex flex-wrap gap-3 w-full md:w-auto justify-between md:justify-normal">
               <div className=" flex gap-1">
                 <button
                   className={`p-2 rounded-md border border-white  ${
